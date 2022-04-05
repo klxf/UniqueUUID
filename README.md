@@ -18,3 +18,4 @@ A Minecraft bukkit plugin
 ## 未来的计划
 - [ ] 重载命令
 - [ ] 数据库不可用时采用文件储存数据
+- 
