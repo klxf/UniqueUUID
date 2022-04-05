@@ -1,0 +1,9 @@
+mysql:
+  host: 'localhost'
+  port: 3306
+  dbname: 'database'
+  username: 'user'
+  password: 'password'
+messages:
+  console_tip: '玩家 {player} 的 UUID 出现异常！'
+  kick_tip: '&l你的 UUID 出现异常，已被限制登录，请联系服务器管理员获取帮助！'
