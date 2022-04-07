@@ -21,7 +21,6 @@ public class UniqueUUID extends JavaPlugin{
 
         getLogger().log(Level.INFO, "启动插件...");
         Bukkit.getPluginCommand("uniqueuuid").setExecutor(new CommandHandler());
-        //Objects.requireNonNull(Bukkit.getPluginCommand("uniqueuuid")).setExecutor(new CommandHandler());
         Bukkit.getPluginManager().registerEvents(new EventListener(), this);
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
