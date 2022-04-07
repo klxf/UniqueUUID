@@ -1,4 +1,14 @@
 name: UniqueUUID
 main: fang.uniqueuuid.UniqueUUID
-version: 1.0.1
+version: 1.0.2
 api-version: 1.18
+author: Mr_Fang
+description: 'Unique UUID'
+commands:
+  uniqueuuid:
+    usage: '/uniqueuuid'
+    permission: uniqueuuid.admin
+    description: 'Reload UniqueUUID'
+permissions:
+  uniqueuuid.admin:
+    default: op
