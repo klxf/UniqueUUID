@@ -6,7 +6,7 @@ author: Mr_Fang
 description: 'Unique UUID'
 commands:
   uniqueuuid:
-    usage: '/uniqueuuid'
+    usage: '/uniqueuuid help'
     permission: uniqueuuid.admin
     description: 'Reload UniqueUUID'
 permissions:
