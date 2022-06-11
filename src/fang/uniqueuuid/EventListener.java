@@ -5,6 +5,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerLoginEvent;
 import org.bukkit.configuration.file.FileConfiguration;
 
+import java.util.Objects;
 import java.util.UUID;
 
 public class EventListener implements Listener{
@@ -21,10 +22,10 @@ public class EventListener implements Listener{
         if(db_playeruuid == null){
             idm.addPlayerUUID(playername, plaueruuid.toString());
         }else if(db_playeruuid != null && !db_playeruuid.equals(plaueruuid.toString())){
-            UniqueUUID.instance.getLogger().warning(Util.msgTranslate(fc.getString("messages.console_tip"), e.getPlayer().getName(), e.getPlayer().getUniqueId()));
+            UniqueUUID.instance.getLogger().warning(Util.msgTranslate(Objects.requireNonNull(fc.getString("messages.console_tip")).replace("{player}", e.getPlayer().getName()).replace("{uuid}", e.getPlayer().getUniqueId().toString())));
             UniqueUUID.instance.getLogger().warning("playerName:" + e.getPlayer().getName() + ", nowUUID:" + e.getPlayer().getUniqueId() + ", oldUUID:" + db_playeruuid);
             e.setResult(PlayerLoginEvent.Result.KICK_OTHER);
-            e.disallow(e.getResult(), "\n" + Util.msgTranslate(fc.getString("messages.kick_tip"), e.getPlayer().getName(), e.getPlayer().getUniqueId()));
+            e.disallow(e.getResult(), "\n" + Util.msgTranslate(Objects.requireNonNull(fc.getString("messages.kick_tip")).replace("{player}", e.getPlayer().getName()).replace("{uuid}", e.getPlayer().getUniqueId().toString())));
         }
     }
 }

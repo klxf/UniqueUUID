@@ -52,8 +52,8 @@ public class DBDataManager implements IDataManager{
     private void putError(Exception e) {
         UniqueUUID.dbError = true;
         UniqueUUID.instance.getLogger().warning("数据库操作失败，请检查配置文件！");
-        e.printStackTrace();
-        Bukkit.getPluginManager().disablePlugin(UniqueUUID.instance);
+        //e.printStackTrace();
+        //Bukkit.getPluginManager().disablePlugin(UniqueUUID.instance);
     }
 
     @Nonnull
