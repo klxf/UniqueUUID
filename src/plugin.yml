@@ -1,6 +1,6 @@
 name: UniqueUUID
 main: fang.uniqueuuid.UniqueUUID
-version: 1.0.2
+version: 1.1.0a
 api-version: 1.18
 author: Mr_Fang
 description: 'Unique UUID'
