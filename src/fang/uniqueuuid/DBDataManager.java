@@ -1,7 +1,6 @@
 package fang.uniqueuuid;
 
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.Bukkit;
 
 import javax.annotation.Nonnull;
 import java.sql.*;
@@ -30,8 +29,7 @@ public class DBDataManager implements IDataManager{
 
         if(host == null || port == null || username == null || db_name == null || password == null){
             UniqueUUID.dbError = true;
-            UniqueUUID.instance.getLogger().warning("数据库配置不完全，关闭插件。");
-            Bukkit.getPluginManager().disablePlugin(UniqueUUID.instance);
+            UniqueUUID.instance.getLogger().warning(Util.getMessages("database.config_err"));
             return;
         }
 
@@ -43,7 +41,7 @@ public class DBDataManager implements IDataManager{
             statement.execute("CREATE TABLE IF NOT EXISTS player_uuid_data( `id` INT NOT NULL AUTO_INCREMENT , `username` TEXT NOT NULL , `UUID` TEXT NOT NULL , PRIMARY KEY (`id`));");
             statement.close();
             connection.close();
-            UniqueUUID.instance.getLogger().info("成功连接数据库！");
+            UniqueUUID.instance.getLogger().info(Util.getMessages("database.success"));
         } catch (SQLException e) {
             putError(e);
         }
@@ -51,9 +49,8 @@ public class DBDataManager implements IDataManager{
 
     private void putError(Exception e) {
         UniqueUUID.dbError = true;
-        UniqueUUID.instance.getLogger().warning("数据库操作失败，请检查配置文件！");
+        UniqueUUID.instance.getLogger().warning(Util.getMessages("database.error"));
         //e.printStackTrace();
-        //Bukkit.getPluginManager().disablePlugin(UniqueUUID.instance);
     }
 
     @Nonnull

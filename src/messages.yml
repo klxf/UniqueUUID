@@ -1,0 +1,25 @@
+########################################
+# tips 中可使用以下变量:
+# The following placeholders can be used in tips:
+# {player}  -> Player's name
+# {uuid}    -> Player's UUID
+# 你还可以在下面的任何地方使用颜色代码（&）
+# You can also use color codes anywhere below (&)
+########################################
+tips:
+  console_tip: '玩家 {player} 的 UUID 出现异常！'
+  kick_tip: '&l你的 UUID 出现异常，已被限制登录，请联系服务器管理员获取帮助！'
+plugin:
+  enable: '插件启动中...'
+  disable: '关闭插件...'
+reload:
+  start: '开始重载插件...'
+  success: '插件重载完成'
+database:
+  success: '成功连接数据库！'
+  error: '数据库操作失败，请检查配置文件！'
+  jdbc_err: '数据库驱动加载失败，将关闭插件。'
+  config_err: '数据库配置不完全，请检查配置文件！'
+command:
+  error: '&e请使用 /uniqueuuid help 查看命令帮助'
+  helps: '重载配置文件 -> /uniqueuuid reload'
