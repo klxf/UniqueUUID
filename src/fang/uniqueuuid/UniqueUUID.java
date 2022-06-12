@@ -18,6 +18,9 @@ public class UniqueUUID extends JavaPlugin{
     public void onEnable() {
         instance = this;
 
+        saveDefaultConfig();
+        saveResource("messages.yml", false);
+
         getLogger().info("============ UniqueUUID ==============");
         getLogger().info(getMessages("plugin.enable"));
 
@@ -31,9 +34,6 @@ public class UniqueUUID extends JavaPlugin{
             //e.printStackTrace();
             dbError = true;
         }
-
-        saveDefaultConfig();
-        saveResource("messages.yml", false);
 
         new DBDataManager().loadAll();
 
