@@ -2,6 +2,7 @@
 A Minecraft bukkit plugin
 
 ![Minecraft Version](https://img.shields.io/badge/Minecraft-1.18~1.19-green) ![GitHub Repo stars](https://img.shields.io/github/stars/klxf/UniqueUUID) ![release](https://img.shields.io/github/v/release/klxf/UniqueUUID) ![downloads](https://img.shields.io/github/downloads/klxf/UniqueUUID/latest/total) [![MCBBS](https://img.shields.io/badge/MCBBS-v4%20Page-green)](https://beta.mcbbs.net/resource/servermod/414eb95x)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fklxf%2FUniqueUUID.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fklxf%2FUniqueUUID?ref=badge_shield)
 
 ## 关于这个插件
 这是我学写插件以来的第一个插件，**很多功能还没写完**
@@ -24,3 +25,6 @@ A Minecraft bukkit plugin
 ## 未来的计划
 - [ ] 数据库不可用时采用文件储存数据
 - [x] ~~重载命令~~ *—— v1.1.0*
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fklxf%2FUniqueUUID.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fklxf%2FUniqueUUID?ref=badge_large)
