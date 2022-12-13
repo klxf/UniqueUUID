@@ -20,8 +20,8 @@ public class EventListener implements Listener{
         if(db_playeruuid == null){
             idm.addPlayerUUID(playername, plaueruuid.toString());
         }else if(db_playeruuid != null && !db_playeruuid.equals(plaueruuid.toString())){
-            UniqueUUID.instance.getLogger().warning(Objects.requireNonNull(Util.getMessages("tips.console_tip")).replace("{player}", e.getPlayer().getName()).replace("{uuid}", e.getPlayer().getUniqueId().toString()));
-            UniqueUUID.instance.getLogger().warning("playerName:" + e.getPlayer().getName() + ", nowUUID:" + e.getPlayer().getUniqueId() + ", oldUUID:" + db_playeruuid);
+            UniqueUUID.logger.warning(Objects.requireNonNull(Util.getMessages("tips.console_tip")).replace("{player}", e.getPlayer().getName()).replace("{uuid}", e.getPlayer().getUniqueId().toString()));
+            UniqueUUID.logger.warning("playerName:" + e.getPlayer().getName() + ", nowUUID:" + e.getPlayer().getUniqueId() + ", oldUUID:" + db_playeruuid);
             e.setResult(PlayerLoginEvent.Result.KICK_OTHER);
             e.disallow(e.getResult(), "\n" + Objects.requireNonNull(Util.getMessages("tips.kick_tip")).replace("{player}", e.getPlayer().getName()).replace("{uuid}", e.getPlayer().getUniqueId().toString()));
         }

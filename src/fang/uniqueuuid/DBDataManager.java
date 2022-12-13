@@ -29,7 +29,7 @@ public class DBDataManager implements IDataManager{
 
         if(host == null || port == null || username == null || db_name == null || password == null){
             UniqueUUID.dbError = true;
-            UniqueUUID.instance.getLogger().warning(Util.getMessages("database.config_err"));
+            UniqueUUID.logger.warning(Util.getMessages("database.config_err"));
             return;
         }
 
@@ -41,7 +41,7 @@ public class DBDataManager implements IDataManager{
             statement.execute("CREATE TABLE IF NOT EXISTS player_uuid_data( `id` INT NOT NULL AUTO_INCREMENT , `username` TEXT NOT NULL , `UUID` TEXT NOT NULL , PRIMARY KEY (`id`));");
             statement.close();
             connection.close();
-            UniqueUUID.instance.getLogger().info(Util.getMessages("database.success"));
+            UniqueUUID.logger.info(Util.getMessages("database.success"));
         } catch (SQLException e) {
             putError(e);
         }
@@ -49,7 +49,7 @@ public class DBDataManager implements IDataManager{
 
     private void putError(Exception e) {
         UniqueUUID.dbError = true;
-        UniqueUUID.instance.getLogger().warning(Util.getMessages("database.error"));
+        UniqueUUID.logger.warning(Util.getMessages("database.error"));
         //e.printStackTrace();
     }
 
