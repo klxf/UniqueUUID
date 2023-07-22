@@ -1,7 +1,7 @@
 # UniqueUUID
 A Minecraft bukkit plugin
 
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.18~1.19-green) ![GitHub Repo stars](https://img.shields.io/github/stars/klxf/UniqueUUID) ![release](https://img.shields.io/github/v/release/klxf/UniqueUUID) ![downloads](https://img.shields.io/github/downloads/klxf/UniqueUUID/latest/total) [![MCBBS](https://img.shields.io/badge/MCBBS-v4%20Page-green)](https://beta.mcbbs.net/resource/servermod/414eb95x)
+![Minecraft Version](https://img.shields.io/badge/Minecraft-1.18~1.20-green) ![GitHub Repo stars](https://img.shields.io/github/stars/klxf/UniqueUUID) ![release](https://img.shields.io/github/v/release/klxf/UniqueUUID) ![downloads](https://img.shields.io/github/downloads/klxf/UniqueUUID/latest/total) [![MCBBS](https://img.shields.io/badge/MCBBS-v4%20Page-green)](https://beta.mcbbs.net/resource/servermod/414eb95x)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fklxf%2FUniqueUUID.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fklxf%2FUniqueUUID?ref=badge_shield)
 
 ## 关于这个插件
