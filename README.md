@@ -1,7 +1,7 @@
 # UniqueUUID
 A Minecraft bukkit plugin
 
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.18~1.21-green) ![GitHub Repo stars](https://img.shields.io/github/stars/klxf/UniqueUUID) ![release](https://img.shields.io/github/v/release/klxf/UniqueUUID) ![downloads](https://img.shields.io/github/downloads/klxf/UniqueUUID/latest/total) [![红石中继站](https://img.shields.io/badge/红石中继站-d8464f)]()
+![Minecraft Version](https://img.shields.io/badge/Minecraft-1.18~1.21-green) ![GitHub Repo stars](https://img.shields.io/github/stars/klxf/UniqueUUID) ![release](https://img.shields.io/github/v/release/klxf/UniqueUUID) ![downloads](https://img.shields.io/github/downloads/klxf/UniqueUUID/latest/total) [![红石中继站](https://img.shields.io/badge/红石中继站-d8464f)](https://www.mczwlt.net/resource/1bdtzyph)
 
 ## 关于这个插件
 这是我学写插件以来的第一个插件，**很多功能还没写完**
